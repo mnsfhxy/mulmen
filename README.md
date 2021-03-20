@@ -1,5 +1,5 @@
 # mulmen
-mentohust多拨脚本  
+mentohust锐捷多拨脚本  
 
 多开mentohust需要删除mentohust.pid  
 如果其路径不在/var/mentohust.pid,则需在mentohust.sh中修改其路径  
