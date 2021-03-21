@@ -6,9 +6,9 @@ RES='\E[0m'
 PID_PATH='/var/mentohust.pid' #mentohust.pid的路径
 CONF_PATH='/etc/mulmen.conf' #配置文件路径
 MENTOHUST_STATU=$(ps -ef |grep -w mentohust|grep -v grep|wc -l)
-if [ -d $CONF_PATH ]
+if [ -f $CONF_PATH ]
 then
-echo -e ${RED}加载配置文件${CONF_PATH}${RES}
+echo -e ${RED}加载配置文件成功${CONF_PATH}${RES}
 else
 echo -e ${RED}${CONF_PATH}配置文件不存在!!${RES}
 exit
